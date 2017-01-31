@@ -14,8 +14,14 @@ export class TableRowComponent {
     @Input() format: string;
     @Output() onFavor = new EventEmitter<IDataListItem>();
     @Input() weather: IDataListItem;
+    @Output() onDelete = new EventEmitter<IDataListItem>();
 
     setFavorite() {
         this.onFavor.emit(this.weather)
     }
+
+    setDelete(){
+      this.onDelete.emit(this.weather)
+    }
+
 }

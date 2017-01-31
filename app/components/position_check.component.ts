@@ -1,7 +1,7 @@
 import '../interfaces/position.interface';
 import '../interfaces/weather.interface';
 
-import { Component, Input, OnInit, OnChanges } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Subscription }   from 'rxjs/Subscription';
 import { PositionService } from '../services/position.service';
 import { WeatherService } from '../services/weather.service';
@@ -16,7 +16,7 @@ import { template } from '../templates/position_check.template';
     template: template
 })
 
-export class PositiopCheckerComponent implements OnChanges {
+export class PositiopCheckerComponent {
 
     constructor(
         public tpositionService: PositionService,

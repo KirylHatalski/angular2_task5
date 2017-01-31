@@ -15,5 +15,5 @@ export const template: string = `
       </div>
   </td>
   <td [class.unfav]="!weather.favor" class='favorite'><i (click)='weather.favor = !weather.favor; setFavorite()'>&#9733;</i></td>
-  <td>-</td>
+  <td class='clickable' (click)='setDelete()'>-</td>
 `

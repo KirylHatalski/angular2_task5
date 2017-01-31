@@ -38,7 +38,7 @@ export const template: string = `
         <td>Add to favorite</td>
         <td>Remove</td>
       </tr>
-      <tablerow *ngFor="let weather of (weather.list | orderBy: 'favor')" [weather]='weather' [format]='format' (onFavor)='tryToChange($event)'></tablerow>
+      <tablerow *ngFor="let weather of (weather.list | orderBy: 'favor')" [weather]='weather' [format]='format' (onFavor)='tryToChange($event)' (onDelete)='deleteItem($event)'></tablerow>
     </table>
 </div>
 `

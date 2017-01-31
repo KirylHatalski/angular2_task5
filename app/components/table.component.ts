@@ -67,6 +67,12 @@ export class TableComponent implements OnInit, OnChanges, OnDestroy {
         this.weather = this.tDataStorageService.getFromLocStor('weather');
     }
 
+    deleteItem(event: IDataListItem){
+      this.weather.list.forEach((value: IDataListItem, index: number) => {
+          if (value.id === event.id) { this.weather.list.splice(index, 1); }
+      })
+    }
+
     tableToggle(): void {
         this.tableVisibility = !this.tableVisibility;
     }
