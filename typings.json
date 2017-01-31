@@ -1,0 +1,8 @@
+{
+  "name": "a2ment_2",
+  "globalDependencies": {
+    "googlemaps": "github:DefinitelyTyped/DefinitelyTyped/googlemaps/google.maps.d.ts#6ce02d59a497f76473df750dbfbdcb0984a25adb",
+    "google-maps": "github:DefinitelyTyped/DefinitelyTyped/google-maps/google-maps.d.ts#c21a2d49821b1a7d882b85e72255cdcf1532d1a3",
+    "es6-shim": "registry:dt/es6-shim#0.31.2+20160317120654"
+  }
+}
